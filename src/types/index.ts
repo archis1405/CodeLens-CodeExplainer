@@ -94,15 +94,7 @@ export interface ASTNode {
 
 // ─── Simulator internals ─────────────────────────────────────────────────────
 
-export type Value =
-  | string
-  | number
-  | boolean
-  | null
-  | undefined
-  | Record<string, Value>
-  | Value[]
-  | FnValue
+export type Value = any
 
 export interface FnValue {
   __fn: true
